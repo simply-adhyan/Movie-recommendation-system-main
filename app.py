@@ -14,7 +14,7 @@ PLACEHOLDER_POSTER = "https://via.placeholder.com/500x750?text=No+Image"
 # Load movie data
 titles_dict = pickle.load(open('movie_dict1.pkl', 'rb'))
 movies = pd.DataFrame(titles_dict)
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = pickle.load(open('top_similarities.pkl', 'rb'))
 
 # Utility: load background image
 def get_img_as_base64(file):
